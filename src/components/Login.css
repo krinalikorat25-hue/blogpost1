@@ -1,0 +1,115 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.login-left {
+    flex: 1;
+    background-color: #1f1f7a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-left img {
+    width: 70%;
+    max-width: 450px;
+}
+
+.login-right {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-right h2,
+.login-right .subtitle,
+form {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-right h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: left; /* તમારા ફોટા મુજબ left align */
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 380px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box; /* padding ને અંદર રાખવા માટે */
+}
+
+.input-field:focus {
+    border-color: #1f1f7a;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 380px;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background 0.3s;
+}
+
+/* Login અને Generate OTP બટન માટે */
+.primary, .secondary {
+    background-color: #1f1f7a;
+    color: white;
+}
+
+.primary:hover, .secondary:hover {
+    background-color: #16165a;
+}
+
+/* Logout પોપઅપ માટે ખાસ સુધારેલા બટન્સ */
+
+/* Logout (Red) Button */
+.btn-logout {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Cancel (Blue/Light Blue) Button */
+.btn-cancel {
+    background-color: #6366f1; /* જે તમારા સ્ક્રીનશોટમાં છે તેવો બ્લુ કલર */
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #4f46e5;
+}
+
+/* જો પોપઅપ બોક્સનું CSS જોઈએ તો: */
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}

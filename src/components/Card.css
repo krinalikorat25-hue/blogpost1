@@ -1,0 +1,55 @@
+/* કોમન કાર્ડ ડિઝાઇન */
+.card {
+  width: 380px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease; /* સ્મૂથ એનિમેશન માટે */
+}
+
+/* --- LIGHT MODE --- */
+.card.light {
+  background-color: #ffffff;
+  color: #333333; /* લાઈટ મોડમાં લખાણ કાળું રહેશે */
+}
+
+.card.light h1 {
+  color: #000000;
+}
+
+.card.light p {
+  color: #444444; /* Description નો કલર */
+}
+
+/* --- DARK MODE --- */
+.card.dark {
+  background-color: #242424; /* કાર્ડનો ડાર્ક બેકગ્રાઉન્ડ */
+  color: #ffffff; /* ડાર્ક મોડમાં લખાણ સફેદ થઈ જશે */
+  border: 1px solid #444;
+}
+
+.card.dark h1, 
+.card.dark p {
+  color: #ffffff; /* ડાર્ક મોડમાં બધું લખાણ સફેદ દેખાશે */
+}
+
+/* ઈમેજ અને બટન સેટિંગ્સ */
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.btn-edit { background-color: blue; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; flex: 1; }
+.btn-delete { background-color: red; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; flex: 1; }
