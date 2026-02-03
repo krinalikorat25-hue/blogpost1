@@ -1,0 +1,128 @@
+/* ================= LIGHT MODE ================= */
+.newpostlight {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.newpostlight .form-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newpostlight h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newpostlight input,
+.newpostlight textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
+
+.newpostlight textarea {
+  resize: none;
+  height: 120px;
+}
+
+.newpostlight button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newpostlight .btn-cancel {
+  background-color: #6c757d;
+  margin-left: 10px;
+}
+
+.newpostlight .error {
+  color: red;
+  font-size: 14px;
+}
+
+.newpostlight img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+
+/* ================= DARK MODE ================= */
+.newpostdark {
+  min-height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+.newpostdark .form-wrapper {
+  background-color: #1e1e1e;
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.newpostdark h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newpostdark input,
+.newpostdark textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.newpostdark textarea {
+  resize: none;
+  height: 120px;
+}
+
+.newpostdark button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newpostdark .btn-cancel {
+  background-color: #444;
+  margin-left: 10px;
+}
+
+.newpostdark .error {
+  color: #ff6b6b;
+  font-size: 14px;
+}
+
+.newpostdark img {
+  max-width: 100%;
+  border-radius: 6px;
+}

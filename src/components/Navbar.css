@@ -1,0 +1,110 @@
+/* 1. Universal Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Base Nav Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+    padding: 6px 20px;      
+    height: 50px;            
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition માટે */
+}
+
+/* --- Dark and Light Mode Classes --- */
+.nav-light {
+    background: blue;
+    color: white;
+}
+
+.nav-dark {
+    background: #1a1a1a; /* Dark gray/black */
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.2rem; 
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;             
+    gap: 18px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /* Nav ના કલર મુજબ બદલાશે */
+    padding: 4px 6px;       
+}
+
+.active-link {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.nav-dark .active-link {
+    border-bottom: 2px solid #00d4ff; /* Dark mode માં અલગ કલરની લાઈન */
+    color: #00d4ff;
+}
+
+.nav-right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Mode Toggle Styling */
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: white; 
+    color: blue;             
+    border-radius: 50%;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Dark mode માં આઈકન નો કલર બદલવા માટે */
+.nav-dark .icon {
+    background-color: #00d4ff;
+    color: #1a1a1a;
+}
