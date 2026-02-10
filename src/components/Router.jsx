@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomePage } from "../Pages/HomePage";
 import { CreatePostPage } from "../Pages/CreatePostPage";
-import { LoginPage } from "../Pages/Loginpage";
+import { LoginPage } from "../Pages/LoginPage";
 import PostDetail from "./PostDetail";
 import AuthGuard from "../guard/AuthGuard";
 import NotFound from "../components/NotFound";
